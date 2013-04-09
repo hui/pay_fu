@@ -22,6 +22,7 @@ module PayFu
       }
       query_params[:body] = options[:body] if options[:body]
       query_params[:return_url] = options[:return_url] if options[:return_url]
+      query_params[:service] = options[:service] if options[:service]
       Hash[query_params.sort]
     end
 
