@@ -16,6 +16,7 @@ module PayFu
 
     def transaction_attributes(notify)
       @transaction_attributes ||= {
+        :out_trade_no => notify.out_trade_no,
         :transaction_id => notify.trade_no,
         :transaction_type => notify.payment_type,
         :payment_status => notify.trade_status,
