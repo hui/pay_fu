@@ -11,7 +11,7 @@ module PayFu
           PayFu::AlipayTransaction.create(transaction_attributes(notify))
         end
       end
-      render :nothing => true
+      render :text => 'success'
     end
 
     def transaction_attributes(notify)
